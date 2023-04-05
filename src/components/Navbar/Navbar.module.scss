@@ -1,0 +1,69 @@
+@import "../../styles/variables.scss";
+
+.header {
+  position: fixed;
+  bottom: 2rem;
+  z-index: 1000;
+}
+
+.navbar {
+  width: 100%;
+  max-width: 100dvw;
+  max-height: 5rem;
+}
+
+.nav_list {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1.8rem;
+  margin: 0 0 0 2rem;
+}
+
+.nav_link {
+  color: $link-unclicked-color;
+  text-shadow: 2px 2px 0px rgb(0, 0, 0);
+  font-size: clamp(1.5rem, 2.5vw, 2.3rem);
+  transition: color 0.2s;
+  cursor: pointer;
+  &::before {
+    content: ">\00a0";
+  }
+  &:hover {
+    transform: scale(1.2);
+    text-decoration: line-through;
+    text-decoration-color: black;
+    color: $link-hover-color;
+    // text-shadow: none;
+  }
+  &:active {
+    color: $link-visited-color;
+    text-shadow: none;
+  }
+}
+
+@media screen and (max-width: 40rem) {
+  .header {
+    position: relative;
+    height: 5rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4rem;
+    padding-left: 1.4rem;
+    padding-right: 1.4rem;
+    padding-bottom: 0;
+  }
+
+  .navbar {
+    height: 50%;
+  }
+  .nav_list {
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    flex-wrap: wrap;
+  }
+}

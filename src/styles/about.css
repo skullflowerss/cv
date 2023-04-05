@@ -1,0 +1,63 @@
+.profileContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.profileSection {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 4rem;
+  margin-bottom: 3.5rem;
+  padding: 0 4.5rem;
+}
+
+.first {
+  align-items: start;
+}
+.second {
+  margin-top: 0;
+}
+
+.profileBox {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 57rem) {
+  .profileBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 40rem) {
+  .profileContainer {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    text-align: center;
+  }
+
+  .profileSection:nth-child(1) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+    width: 100%;
+  }
+
+  .profileBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+}

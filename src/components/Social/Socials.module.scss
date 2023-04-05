@@ -1,0 +1,35 @@
+@import "../../styles/variables.scss";
+
+.socials {
+  margin-top: 2rem;
+}
+
+.linkList {
+  display: flex;
+}
+
+.linkItem {
+  margin-right: 1.4rem;
+
+  &:hover {
+    transform: scale(1.2);
+    text-decoration: line-through;
+    text-decoration-color: black;
+    color: $link-hover-color;
+    // text-shadow: none;
+  }
+  &:active {
+    color: $link-visited-color;
+    text-shadow: none;
+  }
+}
+
+.icon {
+  font-size: clamp(2rem, 3vw, 2.1rem);
+}
+
+@media screen and (max-width: 40rem) {
+  .linkList {
+    justify-content: center;
+  }
+}
