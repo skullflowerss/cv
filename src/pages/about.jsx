@@ -12,8 +12,7 @@ import React from "react";
 
 const AboutPage = ({ newData }) => {
   const image = newData.img;
-  const { experience, projects, bio, name, age } = newData;
-  console.log(newData);
+  const { experience, projects } = newData;
 
   return (
     <>

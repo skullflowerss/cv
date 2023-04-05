@@ -9,10 +9,12 @@
   font-size: clamp(1.2rem, 8vw, 4rem);
   margin-bottom: 2.4rem;
   text-shadow: 2px 2px 0px red;
+  line-height: 40px;
 }
 
 .subtitle {
   color: white;
   font-size: clamp(1.2rem, 4.5vw, 3rem);
   text-shadow: 2px 2px 0px rgb(0, 0, 0);
+  line-height: 40px;
 }

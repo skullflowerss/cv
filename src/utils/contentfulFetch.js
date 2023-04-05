@@ -8,6 +8,5 @@ const client = contentful.createClient({
 
 export const fetchEntries = async () => {
   const response = await client.getEntries();
-  console.log(response);
   return response;
 };

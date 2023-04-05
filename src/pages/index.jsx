@@ -20,7 +20,8 @@ export default function Home(props) {
 
 export async function getStaticProps() {
   const data = await fetchEntries();
-  const newData = data.items[1].fields;
+  const newData = data.items[2].fields;
+
   return {
     props: {
       newData,
