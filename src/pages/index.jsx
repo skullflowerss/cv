@@ -1,4 +1,4 @@
-import { Layout, Main, Navbar, Presentation } from "@/components";
+import { Main, Navbar, Presentation } from "@/components";
 import { fetchEntries } from "@/utils/contentfulFetch";
 import Head from "next/head";
 
