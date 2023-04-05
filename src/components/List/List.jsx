@@ -1,7 +1,6 @@
 import style from "./List.module.scss";
 
 export const List = ({ elements }) => {
-  console.log(elements);
   const { title } = elements;
   const { array } = elements;
 
