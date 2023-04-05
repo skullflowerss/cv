@@ -5,7 +5,7 @@
   padding-left: 2rem;
   height: 100%;
   width: 60%;
-  min-width: 25rem;
+  min-width: 22rem;
 }
 
 .name {
@@ -31,13 +31,12 @@
 
 @media screen and (max-width: 40rem) {
   .profileContainer {
+    min-width: unset;
     padding: 0;
     width: 90%;
   }
 
   .name:nth-child(1) {
     margin-top: 2rem;
-  }
-  .bioContent {
   }
 }

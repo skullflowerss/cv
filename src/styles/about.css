@@ -28,6 +28,19 @@
   justify-content: space-between;
 }
 
+.boxImage {
+  width: 100%;
+  max-width: 340px;
+  position: unset !important;
+}
+
+.profilePic {
+  object-fit: contain;
+  width: 100% !important;
+  position: relative !important;
+  height: auto !important;
+}
+
 @media screen and (max-width: 57rem) {
   .profileBox {
     display: flex;
@@ -44,6 +57,11 @@
     align-items: center;
     height: auto;
     text-align: center;
+    padding: 0 0.8rem;
+  }
+
+  .profileSection {
+    padding: 0;
   }
 
   .profileSection:nth-child(1) {

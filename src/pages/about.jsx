@@ -24,18 +24,15 @@ const AboutPage = ({ newData }) => {
       <Layout>
         <div className="profileContainer">
           <div className="profileSection first">
-            <Image
-              src={"https:" + image.fields.file.url}
-              alt="hello"
-              width={100}
-              height={100}
-              className="profilePic"
-              priority={true}
-              style={{
-                width: "340px",
-                height: "auto",
-              }}
-            />
+            <div className="boxImage">
+              <Image
+                src={"https:" + image.fields.file.url}
+                alt="hello"
+                fill
+                className="profilePic"
+                priority={true}
+              />
+            </div>
             <ProfileContent {...newData} />
           </div>
           <div className="profileSection second">
