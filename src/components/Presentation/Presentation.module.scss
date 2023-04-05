@@ -8,13 +8,19 @@
   color: white;
   font-size: clamp(1.2rem, 8vw, 4rem);
   margin-bottom: 2.4rem;
-  text-shadow: 2px 2px 0px red;
+  text-shadow: 2px 2px 0px red, 3px 3px 0px red, 4px 4px 0px red,
+    5px 5px 0px red, 6px 6px 0px red;
   line-height: 40px;
 }
 
 .subtitle {
   color: white;
   font-size: clamp(1.2rem, 4.5vw, 3rem);
-  text-shadow: 2px 2px 0px rgb(0, 0, 0);
+  text-shadow: 2px 2px 0px black, 3px 3px 0px black, 4px 4px 0px black,
+    5px 5px 0px black, 6px 6px 0px black;
   line-height: 40px;
+}
+
+.separator {
+  text-shadow: none;
 }
